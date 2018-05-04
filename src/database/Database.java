@@ -24,15 +24,13 @@ public class Database {
 		if(connection != null){			
 			System.out.println("Connection successfull");			
 		}
-		
 	}
 
 	public String getBookName(String key){
 		
 		String bookName = null;		
 		String sql = "SELECT book_name FROM books WHERE id = " + key;
-		try {
-			
+		try {	
 			Statement statement = (Statement) this.connection.createStatement();
 			ResultSet result = statement.executeQuery(sql);			
 			while(result.next()){				
