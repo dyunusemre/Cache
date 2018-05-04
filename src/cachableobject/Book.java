@@ -5,23 +5,17 @@ public class Book extends CachableObject{
 	private String bookName;
 
 	public Book(String bookName){
-		
 		setLastAccesed(System.currentTimeMillis());	
-		this.bookName = bookName;	
-		
+		this.bookName = bookName;		
 	}
-	public String getBookName() {
-		
+	public String getBookName() {	
 		setLastAccesed(System.currentTimeMillis());		
-		return bookName;
-		
+		return bookName;	
 	}
 	
-	public void setBookName(String bookName) {
-		
+	public void setBookName(String bookName) {	
 		this.setLastAccesed(System.currentTimeMillis());
-		this.bookName = bookName;
-		
+		this.bookName = bookName;	
 	}
 	
 }
