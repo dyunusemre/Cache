@@ -1,4 +1,4 @@
 # Cache
 
-A Cache between MySQL database and clients 
+A Cache between a database and clients 
 Design multithread safe 
